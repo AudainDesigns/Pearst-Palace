@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Audain Designs">
+	<title>Perast Palace | Enquiry</title>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=EB+Garamond|Alegreya+Sans:300,500' rel='stylesheet' type='text/css'>
+
+	<!-- General Style -->
+	<link href="style.css" rel="stylesheet">
+
+	<!--Custom Style-->
+	<link href="custom.css" rel="stylesheet">
+	
+	<!--Fontawesome Iconset-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- navigation bar -->
+<div id="navigation-bar" class="navbar-fixed-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<!-- navigation -->
+				<div id="main-navigation" class="navbar navbar-default">
+					<div class="">
+						<!-- mobile navigation -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navigation">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						<!-- /mobile navigation -->
+							<a href="index.html" class="navbar-brand logo">PERAST PALACE</a>
+						</div>
+						<!-- collect the nav links, forms, and other content for toggling -->
+						<div id="site-navigation" class="collapse navbar-collapse">
+							<!-- various menu navigations below usable by implementing the 'hidden' css class depending on the page you're on -->
+							<ul class="nav navbar-nav text-left">
+								<li><a class="" href="perast.html">PERAST</a></li>
+								<li><a class="" href="accomodation.html">ACCOMODATION</a></li>
+								<li><a class="" href="enquire.html">ENQUIRE</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /navigation -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /navigation bar -->
+<header>
+</header>
+<!-- body -->
+<!-- information section -->
+<section id="area-block" class="info-section enquire pushdown">
+	<div class="container">
+		<div class="row margin-md">
+			<div class="col-sm-9">
+				<h1>ENQUIRE</h1>
+				<p>If you're interested in renting the property, please fill out the form and we'll return to you quickly. Your details will be used to respond directly to your enquiry and nothing else.</p>
+				<p>Alternatively please send an email with the details of your holiday to <a href="mailto:info@perastpalace.com">info@perastpalace.com</a></p>
+			</div>
+		</div>
+		<div class="row margin-md">
+			<div class="col-sm-9">
+				<!--Validation messages start-->
+				<div class="alert alert-success hidden" id="contactSuccess">
+					<strong>Success!</strong> Your message has been sent to us.
+				</div>
+				<div class="alert alert-danger hidden" id="contactError">
+					<strong>Error!</strong> There was an error sending your message.
+				</div>
+				<!--Validation messages end-->
+			</div>
+		</div>
+		<form id="contactForm" action="php/contact.php" method="POST">
+			<div class="form-area">
+				<div class="row margin-md">
+					<div class="col-sm-9">
+						<input type="text" id="name" class="form-control" name="name" placeholder="Name" data-msg-required="Please enter your name." required>
+					</div>
+				</div>
+				<div class="row margin-md">
+					<div class="col-sm-9">
+						<input type="text" id="email" class="form-control" name="email" placeholder="Email" data-msg-required="Please enter your email." required>
+					</div>
+				</div>
+				<div class="row margin-md">
+					<div class="col-sm-9">
+						<input type="text" id="phone" class="form-control" name="phone" placeholder="Phone" data-msg-required="Please enter your phone number." required>
+					</div>
+				</div>
+				<div class="row margin-md">
+					<div class="col-sm-3">
+						<p class="dates">Prefered dates</p>
+					</div>
+					<div class="col-sm-3">
+						<input type="date" id="arrival" class="form-control" name="arrival" placeholder="Arivval">
+					</div>
+					<div class="col-sm-3">
+						<input type="date" id="departure" class="date-push form-control" name="departure" placeholder="Departure">
+					</div>
+				</div>
+				<div class="row margin-md">
+					<div class="col-sm-9">
+						<textarea type="text" id="details" class="form-control" name="details" placeholder="Details of you group & plans"></textarea>
+					</div>
+				</div>
+				<div class="row margin-md">
+					<div class="col-sm-9">
+						<p>Additional services required:</p>
+					</div>
+					<div class="col-sm-4">
+						<input type="checkbox" id="c1" value="catering" name="options[]"/>
+						<label for="c1"><span></span>Catering</label>
+					</div>
+					<div class="col-sm-8">
+						<input type="checkbox" id="c2" value="cleaning" name="options[]"/>
+						<label for="c2"><span></span>Housekeeping</label>
+					</div>
+					<div class="col-sm-4">
+						<input type="checkbox" id="c3" value="airport" name="options[]"/>
+						<label for="c3"><span></span>Airport Transfers</label>
+					</div>
+					<div class="col-sm-8">
+						<input type="checkbox" id="c4" value="boat" name="options[]"/>
+						<label for="c4"><span></span>Boat Trips</label>
+					</div>
+					<div class="col-sm-4">
+						<input type="checkbox" id="c5" value="babysitting" name="options[]"/>
+						<label for="c5"><span></span>Babysitting</label>
+					</div>
+                    <div class="col-sm-8">
+						<input type="checkbox" id="c6" value="car" name="options[]"/>
+						<label for="c6"><span></span>Care Hire</label>
+					</div>
+                    <div class="col-sm-4">
+						<input type="checkbox" id="c7" value="event" name="options[]"/>
+						<label for="c7"><span></span>Event Planning</label>
+					</div>
+				</div>
+				<div class="row margin-md">
+					<div class="col-sm-9">
+						<input type="submit" value="Send" class="btn btn-form" data-loading-text="Loading...">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+<!-- /information section -->
+<!-- /body -->
+<!-- footer -->
+<footer>
+	
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 
+<!-- Compiled JS/Scripts -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--Contact Related-->
+<script src="js/jquery.validation.js"></script>
+<script src="js/contact.js"></script>
+
+
+
+<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+	<script type="text/javascript">
+		
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-12345678-1']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	
+	</script>
+ -->
+</body>
+</html>

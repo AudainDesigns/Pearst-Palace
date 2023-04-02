@@ -1,0 +1,605 @@
+/*
+ * Name: 	Perast Palace
+ * Version: 1.0
+ * Updated: 29/03/2016
+ * Website:	http://audaindesigns.com
+ * Author:	Audain Designs
+ * Type:	Style - General
+ */
+
+/*-----------------------
+	Add-on's
+------------------------*/
+.uppercase{text-transform:uppercase;}
+.underline {text-decoration: underline;}
+.no-margin{margin:0px!important;}
+.no-padding{padding:0px!important;}
+.margin-sm {margin:15px 0px;}
+.margin-md {margin:40px 0px;}
+.margin-lg {margin:110px 0px;}
+.padding-sm {padding:15px 0px;}
+.padding-md {padding:50px 0px;}
+.padding-lg {padding:100px 0px;}
+.pushdown {margin-top:51px;} /*Used to push down initial content past the menu*/
+
+
+/*-----------------------
+	General
+------------------------*/
+body {
+	font-family: "Alegreya Sans",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:#58585a;
+}
+p {
+    font-family:'Alegreya Sans', sans-serif;
+    font-size:22pt;
+    line-height: 30pt;
+    font-weight:300;
+	color:#393939;
+}
+
+strong {
+	font-weight:500;
+} 
+a {
+	color:#438788;
+}
+a:hover {
+	color:#438788;
+}
+a:focus {
+	color:#438788;
+}
+
+/*-----------------------
+	Headings
+------------------------ */
+h1 {
+    font-family:'EB Garamond', serif;
+    font-size:48pt;
+	line-height:60pt;
+	text-transform:uppercase;
+	color:#75c3c3;
+}
+h2 {
+
+    font-family:'EB Garamond', serif;
+    font-size:36pt;
+	line-height:40pt;
+	text-transform:uppercase;
+	color:#75c3c3;
+}
+h3 {
+    font-family:'EB Garamond', serif;
+	font-size:36pt;	
+	line-height:40pt;
+    text-transform:uppercase;
+	color:#428787;
+}
+/*-----------------------
+	Navigation: Main
+------------------------*/
+#navigation-bar{
+	font-family: 'EB Garamond', serif;
+	background: #75c3c3;
+	height: 51px;
+}
+.navbar-default {
+	background-color:transparent;
+    border:0;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-nav{
+	float:right;
+}
+.navbar-default .navbar-brand {
+	color:#fff;
+	font-size:30px;
+}
+.navbar-default .navbar-nav>li>a {
+	color:#fff;
+	font-size:25px;
+	font-family: 'EB Garamond', serif;
+	font-style: normal;
+	font-weight: 400;;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color:#438788;
+}
+@media screen and (max-width:767px){
+	.navbar-nav{
+		float:none!important;
+	}	
+}
+@media screen and (max-width:991px){
+	.navbar-default .navbar-nav>li>a {
+		font-size:18px;
+	}
+}
+@media screen and (max-width:480px){
+	.navbar-default .navbar-brand {
+		font-size: 22px;
+	}
+}
+/*-----------------------
+	Navigation: Responsive
+------------------------*/
+.navbar-default .navbar-toggle {
+	border:0;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: #75c3c3;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: rgba(255, 255, 255, 0.71);
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+/*-----------------------
+	Heartbeat
+------------------------*/
+.carousel-caption {
+	top:378px;
+	padding-top:0;
+}
+.heartbeat{
+	height:1118px;
+}
+.home-hb-1{
+	background: url('img/heartbeats/Perast-Palace-Montenegro-Holiday-Rental.jpg');
+	background-size: cover;
+    background-position: center;
+}
+
+.heartbeat-content {
+	margin: 0 auto;
+	max-width:660px;
+	text-align: center;
+    background: rgba(52, 123, 123, 0.5);
+}
+.heartbeat-inner {
+	padding: 90px 0px;
+}
+.heartbeat-content h1{
+	margin-top:0;
+	margin-bottom:30px;
+	padding:0px 20px;	
+}
+.heartbeat-content p {
+	margin-bottom:0px;
+	padding:0px 100px;
+}
+.heartbeat-content h1, .heartbeat-content p {
+	color:#fff;
+}
+@media screen and (max-width:991px){
+	.heartbeat-content h1{
+		font-size:38pt;
+		line-height:50pt;
+	}
+	.heartbeat-content p {
+		font-size:18pt;
+		line-height:32pt;
+		padding:0px 40px;
+	}
+}
+@media screen and (max-width:767px){
+	.heartbeat-content {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	
+	.heartbeat-content p {
+		padding:0px 20px;
+	}
+}
+@media screen and (max-width:480px){
+	.heartbeat-content h1{
+		font-size:25pt;
+		line-height:40pt;
+	}
+	.heartbeat-content p {
+		font-size:15pt;
+		line-height:25pt;
+	}
+	.heartbeat-content {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+/*-----------------------
+	Information sections
+------------------------*/
+.info-section {
+	position:relative;
+}
+.info-section:before {
+    position: absolute;
+    content: "";
+    left: 44%;
+    margin-right: auto;
+    margin-left: auto;
+    background: url('img/square.jpg');
+    width: 77px;
+    height: 100%;
+    background-repeat: repeat-y;
+}
+.info-section.perast:before, .info-section.property:before, .info-section.gallery:before, .info-section.enquire:before {
+	display:none;
+}
+.info-section h1{
+	text-align:right;
+	margin-right:125px;
+}
+.info-section.perast h1, .info-section.property h1, .info-section.enquire h1{
+	text-align:left;
+}
+.info-section p{}
+.modal-dialog {
+		width: 95%!important;
+		max-width:1200px;
+	}
+@media screen and (max-width:1199px){
+	.info-section:before {
+		left: 40%;
+	}
+}
+@media screen and (max-width:991px){
+	.info-section h1{
+		font-size:30pt;
+		line-height: 30pt;
+	}
+}
+@media screen and (max-width:767px){
+	.info-section:before {
+		display:none;
+	}
+	.info-section h1 {
+		text-align:left;
+		margin-right:0;
+	}
+}
+@media screen and (max-width:480px){
+	
+}
+/*-----------------------
+	events images sections
+------------------------*/
+.icon-container {
+	text-align:center;
+}
+.icon-container img, .icon-container span {
+	display:block;
+}
+.icon-container img {
+	margin:0 auto;
+}
+.icon-container span {
+	margin-top:10px;
+	font-size:20px;
+	line-height:24px;
+}
+.events-icons li {
+	width: 30%;
+	margin:20px 0;
+}
+.pushme { /*Used to align the icons that only have 1 line of text*/
+	margin-top:35px!important;
+}
+@media screen and (max-width:991px){
+	.events-icons li {
+		width: 45%;
+	}
+}
+@media screen and (max-width:767px){
+	.events-icons li {
+		width: 30%;
+	}
+}
+@media screen and (max-width:480px){
+	.events-icons li {
+		width: 45%;
+	}
+}
+/*-----------------------
+	Picture Sections
+------------------------*/
+.p-section-1 {
+	height:800px;
+	background: url('img/Perast-Bay-of-Kotor-Montenegro.jpg');
+	background-size: cover;
+    background-position: center;
+}
+.p-section-2 {
+	height:800px;
+	background: url('img/Perast-Palace-Hoilday-Home-Rental-Vacation.jpg');
+	background-size: cover;
+    background-position: center;
+}
+.p-section-3 {
+	height:800px;
+	background: url('img/Perast-Palace-Hoilday-Home-Rental-Vacation-2.jpg');
+	background-size: cover;
+    background-position: center;
+}
+.perast.p-section-1 {
+	height:800px;
+	background: url('img/perast/p1.jpg');
+	background-size: cover;
+    background-position: center;
+}
+
+.accom.p-section-1 {
+	height:800px;
+	background: url('img/accomodation/p1.jpg');
+	background-size: cover;
+    background-position: center;
+}
+/*-----------------------
+	Perast page
+------------------------*/
+.airport-container {
+	position: relative;
+	margin: 10px 10px 10px 120px;
+}
+.airport-container img {
+	position: absolute;
+    left: -100px;
+    top: 10px;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 45%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 900px !important;
+}
+.p-weather img {
+	margin:0 auto;
+}
+/*-----------------------
+	Gallery page
+------------------------*/
+.modal-backdrop {
+	background-color:#1F6565
+}
+.ekko-lightbox .modal-dialog {
+	margin: 30px auto;
+}
+.gallery img {
+	border: 4px solid #fff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+	margin:20px auto;
+}
+
+.thumb-container:hover {
+	background-color:#cbdede;	
+}
+
+body .ekko-lightbox .modal-content {
+    box-shadow: none;
+    border-radius: 0;
+}
+body .ekko-lightbox .modal-header .close {
+    margin-top: 40px;
+    padding: 5px 18px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #75c3c3;
+    text-shadow: none;
+    opacity: 1;
+    font-size: 50px;
+}
+body .ekko-lightbox .modal-header {
+	position: absolute;
+    border-bottom: 0;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: -40px;
+}
+body .ekko-lightbox .modal-header h4 {
+	position: absolute;
+    bottom: 40px;
+    left: 15px;
+	color:#75c3c3;
+}
+body .ekko-lightbox .ekko-lightbox-nav-overlay {
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+body .ekko-lightbox .ekko-lightbox .glyphicon-chevron-left, .ekko-lightbox .glyphicon-chevron-right {
+	text-decoration:none;
+}
+body .ekko-lightbox .modal-body {
+	padding:0;
+}
+body .ekko-lightbox .modal-footer {
+	font-size:20px;
+	height: 84px;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 100;
+    margin-top: 40px;
+    border: 0;
+}
+.ekko-lightbox-container {
+    text-align: center;
+    line-height: 5;
+}
+
+
+.spacing {
+	margin:40px 0 0 0;
+	}
+
+.wash-bg {
+	background-color:#e3f0f0;	
+}
+
+/*-----------------------
+	Form inputs/controls
+------------------------*/
+.enquire .form-area input, .enquire .form-area textarea {
+	font-size: 24px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #75C3C3;
+	height:auto!important;
+}
+.enquire .form-area textarea {
+	min-height:250px;
+	
+}
+.enquire .form-area p.dates {
+	line-height:2.5;
+}
+.enquire .form-area label {
+	font-size:24px;
+	font-weight:300;
+	padding-right:10px;
+}
+input[type="checkbox"]:checked + label {
+ 
+}
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+	padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #75C3C3;
+	margin-right:20px;
+}
+input[type="checkbox"]:checked + label span {
+	padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #75C3C3;
+    box-shadow: inset 0px 0px 0px 4px #FFF;
+    background: #75C3C3;
+}
+@media screen and (max-width:767px){
+	.date-push {
+		margin-top:40px;
+	}
+}
+
+/*-----------------------
+	Footer
+------------------------*/
+.footer {
+	color: #fff;
+    background: #75c3c3;
+}
+.footer .fc-last {
+	text-align:right;
+	display:block;
+}
+.footer p {
+	font-size:18pt;
+	margin:0;
+	line-height: 24pt;
+}
+.footer a, .footer p {
+	color:#fff;
+}
+@media screen and (max-width:767px){
+	.footer, .footer .fc-last {
+		text-align:center!important;
+	}
+	.footer .fc-last {
+		margin-top:20px;
+	}
+}
+
+/*-----------------------
+	Buttons
+------------------------*/
+.btn.btn-form {
+	background: #75C3C3;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px;
+    width: 100%;
+}.btn.btn-form:hover, .btn.btn-form:focus {
+	background: #539696;
+}
+@media screen and (max-width:1199px){
+	.btn.btn-explore {
+		font-size: 35px;
+	}
+}
+@media screen and (max-width:991px){
+	.btn.btn-explore {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width:767px){
+	.explore .explore-buttons ul li {
+		width:49%;
+	}
+	.btn.btn-explore {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width:480px){
+	.btn.btn-explore {
+		font-size: 20px;
+	}
+}
+/*-----------------------
+	Animations
+------------------------*/
+
+a, img, span, h3, p, i, li, .btn{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+button	 {   
+  box-shadow: none!important;
+  outline: 0 none!important;
+}
